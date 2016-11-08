@@ -11,14 +11,13 @@ import com.veslabs.jetlinklibrary.JetLinkApp;
 import com.veslabs.jetlinklibrary.config.JetLinkUIProperties;
 import com.veslabs.jetlinklibrary.config.JetLinkUser;
 import com.veslabs.jetlinklibrary.config.JetlinkConfig;
-import com.veslabs.jetlinklibrary.faq.FaqActivity;
 import com.veslabs.jetlinklibrary.messaging.JetLinkChatActivity;
+
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btnJetlink;
+    private Button btnMessaging;
     private Button btnFaq;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,21 +35,14 @@ public class MainActivity extends AppCompatActivity {
         user.setSurname("Yener");
         JetLinkApp.getInstance(getApplicationContext()).setUser(user);
 
-        btnJetlink = (Button) findViewById(R.id.btnJetlink);
-        btnJetlink.setOnClickListener(new View.OnClickListener() {
+
+        btnMessaging= (Button) findViewById(R.id.btnJetLink);
+        btnMessaging.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, JetLinkChatActivity.class);
                 startActivity(intent);
-            }
-        });
 
-        btnFaq = (Button) findViewById(R.id.btnFaq);
-        btnFaq.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, FaqActivity.class);
-                startActivity(intent);
             }
         });
     }

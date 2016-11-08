@@ -8,23 +8,24 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:gravity="center"
     tools:context="com.veslabs.jetlinksdkclientapp.MainActivity">
 
     <Button
-        android:id="@+id/btnJetlink"
+        android:id="@+id/btnJetLink"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Click to Go To Jetlink"
+        android:text="Click To Launch JetLink Messaging"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" />
 
     <Button
         android:id="@+id/btnFaq"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Click to Go To FAQ"
-        android:layout_below="@+id/btnJetlink"
-        android:layout_alignStart="@+id/btnJetlink"
-        android:layout_marginTop="16dp" />
+        android:text="Click To Launch JetLink FAQ"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/btnJetLink"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>

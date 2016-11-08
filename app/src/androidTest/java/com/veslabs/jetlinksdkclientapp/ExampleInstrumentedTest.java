@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.veslabs.jetlinksdkclientapp", appContext.getPackageName());
+        assertEquals("com.veslabs.jetlinklibdemoapp", appContext.getPackageName());
     }
 }
