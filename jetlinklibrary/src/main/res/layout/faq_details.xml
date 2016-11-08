@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context=".faq.FaqDetailActivity">
+
+    <com.veslabs.jetlinklibrary.util.FallingSkyTextView
+        android:id="@+id/faq_detail"
+        android:text="Question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="8"
+        android:background="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:gravity="bottom"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+
+    <com.veslabs.jetlinklibrary.util.FallingSkyTextView
+        android:id="@+id/faq_answer"
+        android:text="Answer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="14sp"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+
+</LinearLayout>

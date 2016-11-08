@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left"
+    android:gravity="left"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="20dp"
+    android:paddingTop="5dp">
+
+    <LinearLayout
+        android:id="@+id/ll_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/iv_profile"
+        android:orientation="horizontal"
+        android:paddingLeft="60dp"
+        android:paddingTop="10dp">
+
+        <Button
+            android:id="@+id/chatbot_btn_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="EVET"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:background="@drawable/bg_chatbot_button"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_marginRight="5dp"/>
+
+        <Button
+            android:id="@+id/chatbot_btn_no"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="HAYR"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:background="@drawable/bg_chatbot_button"/>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.veslabs.jetlinklibrary">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".JetLinkApp"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity
+            android:name=".messaging.JetLinkChatActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".messaging.service.XMPPService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name=".profile.ProfileActivity"
+            android:icon="@mipmap/ic_launcher" />
+        <activity
+            android:name=".faq.FaqActivity"
+            android:label="@string/faq" />
+        <activity
+            android:name=".faq.FaqListActivity"
+            android:label="@string/faq"
+            android:parentActivityName=".faq.FaqActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.veslabs.jetlinklibrary.faq.FaqActivity" />
+        </activity>
+        <activity
+            android:name=".faq.FaqDetailActivity"
+            android:label="@string/faq"
+            android:parentActivityName=".faq.FaqListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.veslabs.jetlinklibrary.faq.FaqListActivity" />
+        </activity>
+    </application>
+
+</manifest>

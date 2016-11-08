@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_outgoing_message"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:gravity="right"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp">
+
+    <ImageView
+        android:id="@+id/iv_profile"
+        android:layout_width="@dimen/profile_photo"
+        android:layout_height="@dimen/profile_photo"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/profile_image_outgoing" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="5dp"
+        android:layout_toStartOf="@+id/iv_profile"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_message_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/bg_msg_outgoing"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="testxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+            android:textColor="@color/message_outgoing_text" />
+
+        <TextView
+            android:id="@+id/tv_mesage_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="2 mins ago"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/message_date_text"
+            android:textSize="8sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
