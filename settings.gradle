@@ -1,1 +1,1 @@
-include ':app', ':jetlinklibrary-release4'
+include ':app', ':jetlinklibrary-release'

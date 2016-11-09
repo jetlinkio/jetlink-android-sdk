@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/JetLinkLibDemoApp.iml" filepath="$PROJECT_DIR$/JetLinkLibDemoApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JetlinkSdkClientApp.iml" filepath="$PROJECT_DIR$/JetlinkSdkClientApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/jetlinklibrary-release4/jetlinklibrary-release4.iml" filepath="$PROJECT_DIR$/jetlinklibrary-release4/jetlinklibrary-release4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jetlinklibrary-release/jetlinklibrary-release.iml" filepath="$PROJECT_DIR$/jetlinklibrary-release/jetlinklibrary-release.iml" />
     </modules>
   </component>
 </project>
