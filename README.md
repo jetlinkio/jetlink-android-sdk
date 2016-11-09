@@ -1,0 +1,3 @@
+# jetlink-android-sdk
+
+Nextgeneration messaging app...
