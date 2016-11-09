@@ -16,3 +16,10 @@ dependencies {
     compile 'com.veslabs.jetlink:jetlinklibrary:1.0.0'
 }
 ```
+
+That's All! JetLink is read to go! Now, ou have a messaging module in your app.
+
+Congratulations!!!
+
+
+
