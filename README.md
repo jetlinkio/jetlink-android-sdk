@@ -1,7 +1,7 @@
 
 
 ## JetLink Android SDK
-[![Twitter](https://img.shields.io/badge/twitter-@GetHotline-orange.svg?style=flat)](https://twitter.com/jetlink_io)
+[![Twitter](https://jetlink.io/Assets/images/apple-touch-icon-precomposed.png)](https://twitter.com/jetlink_io)
 ### [Official Website](https://jetlink.io/)
 
 ###Instant customer service and commerce with messaging
