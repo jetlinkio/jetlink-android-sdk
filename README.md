@@ -1,7 +1,7 @@
 
 
 ## JetLink Android SDK
-[![Twitter](https://jetlink.io/Assets/images/apple-touch-icon-precomposed.png)](https://twitter.com/jetlink_io)
+[![Twitter](https://app.jetlink.io/Assets/custom/img/jetlink_logo.png)](https://twitter.com/jetlink_io)
 ### [Official Website](https://jetlink.io/)
 
 ###Instant customer service and commerce with messaging
@@ -17,7 +17,7 @@ dependencies {
 }
 ```
 
-That's All! JetLink is read to go! Now, ou have a messaging module in your app.
+That's All! JetLink is ready to go! Now, you have a messaging module in your app.
 
 Congratulations!!!
 
