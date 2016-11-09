@@ -1,4 +1,10 @@
 apply plugin: 'com.android.application'
+ext {
+    PUBLISH_GROUP_ID = 'com.veslabs.jetlink'
+    PUBLISH_ARTIFACT_ID = 'jetlinklibrary'
+    PUBLISH_VERSION = '1.0.0'
+}
+
 
 android {
     compileSdkVersion 24
@@ -17,6 +23,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    lintOptions{
+        abortOnError false
+    }
 }
 
 dependencies {
@@ -32,3 +41,5 @@ dependencies {
     compile 'com.squareup.okhttp:okhttp-urlconnection:2.0.0'
     compile project(':jetlinklibrary-release')
 }
+
+apply from: 'https://raw.githubusercontent.com/blundell/release-android-library/master/android-release-aar.gradle'
