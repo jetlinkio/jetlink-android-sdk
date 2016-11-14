@@ -13,7 +13,7 @@
 App Module gradle file **(app/build.gradle)**
 ```
 dependencies {
-    compile ('com.veslabs.jetlink:jetlinklibrary:1.0.6@aar')
+    compile ('com.veslabs.jetlink:jetlinklibrary:1.0.7@aar')
     compile 'com.squareup.retrofit:retrofit:1.9.0'
 
 }
@@ -34,7 +34,8 @@ Congratulations!!!
 
 ```
 dependencies {
-    compile 'com.veslabs.jetlink:jetlinklibrary:1.0.0'
+     compile ('com.veslabs.jetlink:jetlinklibrary:1.0.7@aar')
+        compile 'com.squareup.retrofit:retrofit:1.9.0'
 }
 ```
 
@@ -47,9 +48,9 @@ Add the following to your app's launcher activity’s onCreate() method. Please 
 Don't forget to replace the <YOUR-APP-ID> and <YOUR-APP-KEY> in the following code snippet with the actual app ID and app key.   
 
 ```
-	JetlinkConfig jetlinkConfig = new JetlinkConfig("android-developer-8fe2a96b-581c53a1", "c636d12159eb47e5aa6972cc3417249a");
-    jetlinkConfig.setJetLinkUIProperties(uiProperties);
-    JetLinkApp.getInstance(getApplicationContext()).init(jetlinkConfig);
+	JetlinkConfig jetlinkConfig = new JetlinkConfig("<YOUR-APP-ID>", "<YOUR-APP-KEY>");
+
+
 ```
 
 
@@ -62,6 +63,7 @@ You can send basic user information at the beginning to give you more context on
 	user.setName("Sena");
 	user.setSurname("Yener");
 	JetLinkApp.getInstance(getApplicationContext()).setUser(user);
+	JetLinkApp.getInstance(getApplicationContext()).init(jetlinkConfig);
 ```
 
 

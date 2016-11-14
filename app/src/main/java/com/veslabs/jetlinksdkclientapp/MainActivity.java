@@ -24,16 +24,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        JetlinkConfig jetlinkConfig = new JetlinkConfig("android-developer-8fe2a96b-581c53a1", "c636d12159eb47e5aa6972cc3417249a");
+        JetlinkConfig jetlinkConfig = new JetlinkConfig("<YOUR-APP-ID>", "<YOUR-APP-KEY>");
         JetLinkUIProperties uiProperties = new JetLinkUIProperties();
         jetlinkConfig.setJetLinkUIProperties(uiProperties);
-        JetLinkApp.getInstance(getApplicationContext()).init(jetlinkConfig);
+
 
         JetLinkUser user = new JetLinkUser();
         user.setEmail("sena.yener@veslabs.com");
         user.setName("Sena");
         user.setSurname("Yener");
         JetLinkApp.getInstance(getApplicationContext()).setUser(user);
+        JetLinkApp.getInstance(getApplicationContext()).init(jetlinkConfig);
 
 
         btnMessaging= (Button) findViewById(R.id.btnJetLink);
