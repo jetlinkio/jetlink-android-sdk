@@ -13,7 +13,9 @@
 App Module gradle file **(app/build.gradle)**
 ```
 dependencies {
-    compile 'com.veslabs.jetlink:jetlinklibrary:1.0.0'
+    compile ('com.veslabs.jetlink:jetlinklibrary:1.0.6@aar')
+    compile 'com.squareup.retrofit:retrofit:1.9.0'
+
 }
 ```
 
@@ -41,7 +43,7 @@ dependencies {
 
 ### 2. Initialize JetLink
 
-Add the following to your app's launcher activity’s onCreate() method. Please ensure JetLink.init() is invoked before you use any feature of JetLink SDK. 
+Add the following to your app's launcher activityâ€™s onCreate() method. Please ensure JetLink.init() is invoked before you use any feature of JetLink SDK. 
 Don't forget to replace the <YOUR-APP-ID> and <YOUR-APP-KEY> in the following code snippet with the actual app ID and app key.   
 
 ```
