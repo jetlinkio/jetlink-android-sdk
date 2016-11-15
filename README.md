@@ -40,6 +40,7 @@ dependencies {
 ```
 
 
+And your minSdkVersion must at least be 18.
 
 
 ### 2. Initialize JetLink
