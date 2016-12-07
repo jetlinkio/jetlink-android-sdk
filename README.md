@@ -1,7 +1,7 @@
 
 
 ## JetLink Android SDK
-[![Twitter](https://app.jetlink.io/Assets/custom/img/jetlink_logo.png)](https://twitter.com/jetlink_io)
+[![Website](https://app.jetlink.io/Assets/custom/img/jetlink_logo.png)](https://jetlink.io)
 ### [Official Website](https://jetlink.io/)
 
 ###Instant customer service and commerce with messaging
