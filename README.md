@@ -13,8 +13,10 @@
 App Module gradle file **(app/build.gradle)**
 ```
 dependencies {
-    compile ('com.veslabs.jetlink:jetlinklibrary:1.0.7@aar')
-    compile 'com.squareup.retrofit:retrofit:1.9.0'
+      compile('com.veslabs.jetlink:jetlinklibrary:1.0.33@aar') {
+        transitive = true
+    }
+
 
 }
 ```
@@ -34,8 +36,10 @@ Congratulations!!!
 
 ```
 dependencies {
-     compile ('com.veslabs.jetlink:jetlinklibrary:1.0.7@aar')
-        compile 'com.squareup.retrofit:retrofit:1.9.0'
+        compile('com.veslabs.jetlink:jetlinklibrary:1.0.33@aar') {
+        transitive = true
+    }
+
 }
 ```
 
@@ -60,9 +64,9 @@ Don't forget to replace the <YOUR-APP-ID> and <YOUR-APP-KEY> in the following co
 You can send basic user information at the beginning to give you more context on the user when your support agents are messaging back and forth with them.         
 ```
 	JetLinkUser user = new JetLinkUser();
-	user.setEmail("sena.yener@veslabs.com");
-	user.setName("Sena");
-	user.setSurname("Yener");
+	user.setEmail("salman.khan@veslabs.com");
+	user.setName("Salman");
+	user.setSurname("Khan");
 	JetLinkApp.getInstance(getApplicationContext()).setUser(user);
 	JetLinkApp.getInstance(getApplicationContext()).init(jetlinkConfig);
 ```
