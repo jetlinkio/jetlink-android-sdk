@@ -13,7 +13,7 @@
 App Module gradle file **(app/build.gradle)**
 ```
 dependencies {
-      compile('com.veslabs.jetlink:jetlinklibrary:1.0.33@aar') {
+      compile('com.veslabs.jetlink:jetlinklibrary:1.0.39@aar') {
         transitive = true
     }
 
