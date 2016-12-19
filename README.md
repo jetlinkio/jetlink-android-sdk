@@ -36,7 +36,7 @@ Congratulations!!!
 
 ```
 dependencies {
-        compile('com.veslabs.jetlink:jetlinklibrary:1.0.36@aar') {
+        compile('com.veslabs.jetlink:jetlinklibrary:1.0.39@aar') {
         transitive = true
     }
 
