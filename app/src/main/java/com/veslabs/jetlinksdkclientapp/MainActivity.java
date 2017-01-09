@@ -30,9 +30,9 @@ public class MainActivity extends AppCompatActivity {
 
 
         JetLinkUser user = new JetLinkUser();
-        user.setEmail("sena.yener@veslabs.com");
-        user.setName("Sena");
-        user.setSurname("Yener");
+        user.setEmail("salman.khan@jetlink.com");
+        user.setName("Salman");
+        user.setSurname("Khan");
         JetLinkApp.getInstance(getApplicationContext()).setUser(user);
         JetLinkApp.getInstance(getApplicationContext()).init(jetlinkConfig);
 
