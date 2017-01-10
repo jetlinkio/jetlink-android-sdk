@@ -78,3 +78,10 @@ Just call JetLinkChatActivity and it will open a ready-to-use chat screen;
 Intent intent = new Intent(MainActivity.this, JetLinkChatActivity.class);
 startActivity(intent);
 ```
+
+### 5. Offline Messages (Push Notifications)
+
+You need to integrate Firebase Cloud Messaging (FCM) into your app in order to get messages while your app is killed. 
+Because this mechanism uses push messages to trigger Jetlink and Jetlink works with Firebase Cloud Messaging System of Google.
+
+[For Firebase Cloud Messaging integration please click.](https://github.com/jetlinkio/jetlink-android-sdk/wiki/Notification-Message-Integration)
