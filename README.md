@@ -85,3 +85,8 @@ You need to integrate Firebase Cloud Messaging (FCM) into your app in order to g
 Because this mechanism uses push messages to trigger Jetlink and Jetlink works with Firebase Cloud Messaging System of Google.
 
 [For Firebase Cloud Messaging integration please click.](https://github.com/jetlinkio/jetlink-android-sdk/wiki/Notification-Message-Integration)
+
+## VIDEO TUTORIAL
+Altough we have clearly explained everthing, a video tutorial may still be helpful.
+
+[![IMAGE ALT TEXT HERE](https://github.com/jetlinkio/jetlink-android-sdk/blob/master/app/src/main/res/mipmap-hdpi/jetlink_Youtube_Video2.png)](https://www.youtube.com/watch?v=LmoE6XGCl0c)
