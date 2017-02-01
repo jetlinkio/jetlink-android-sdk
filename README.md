@@ -13,7 +13,7 @@
 App Module gradle file **(app/build.gradle)**
 ```
 dependencies {
-      compile('com.veslabs.jetlink:jetlinklibrary:1.1.0@aar') {
+      compile('com.veslabs.jetlink:jetlinklibrary:1.1.1@aar') {
         transitive = true
     }
 }
@@ -34,7 +34,7 @@ Congratulations!!!
 
 ```
 dependencies {
-        compile('com.veslabs.jetlink:jetlinklibrary:1.1.0@aar') {
+        compile('com.veslabs.jetlink:jetlinklibrary:1.1.1@aar') {
         transitive = true
     }
 
@@ -42,7 +42,7 @@ dependencies {
 ```
 
 
-And your minSdkVersion must at least be 18.
+And your minSdkVersion must at least be 16.
 
 
 ### 2. Initialize JetLink
