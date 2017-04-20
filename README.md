@@ -1,12 +1,10 @@
 
 
 ## JetLink Android SDK
-[![Website](https://app.jetlink.io/Assets/custom/img/jetlink_logo.png)](https://jetlink.io)
+[![Website](https://app.jetlink.io/Assets/custom/img/jetlink-logo-medium.png)](https://jetlink.io)
 ### [Official Website](https://jetlink.io/)
 
-###Instant customer service and commerce with messaging
-
-##### Jetlink is the easiest way to connect with your customers for selling and support
+Messaging platform for easy commerce and better support.
 
 ##### Quick Steps
 
