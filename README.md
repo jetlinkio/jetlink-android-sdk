@@ -11,7 +11,7 @@ Messaging platform for easy commerce and better support.
 App Module gradle file **(app/build.gradle)**
 ```
 dependencies {
-      compile('com.veslabs.jetlink:jetlinklibrary:1.1.10@aar') {
+      compile('com.veslabs.jetlink:jetlinklibrary:1.1.12@aar') {
         transitive = true
     }
 }
@@ -32,7 +32,7 @@ Congratulations!!!
 
 ```
 dependencies {
-        compile('com.veslabs.jetlink:jetlinklibrary:1.1.10@aar') {
+        compile('com.veslabs.jetlink:jetlinklibrary:1.1.12@aar') {
         transitive = true
     }
 
