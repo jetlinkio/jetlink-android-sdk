@@ -1,7 +1,5 @@
-
-
 ## JetLink Android SDK
-[![Website](https://app.jetlink.io/Assets/custom/img/jetlink-logo-medium.png)](https://jetlink.io)
+[![Website](https://app.jetlink.io/Assets/img/jetlink-logo-medium.png)](https://jetlink.io)
 ### [Official Website](https://jetlink.io/)
 
 Messaging platform for easy commerce and better support.
