@@ -9,8 +9,8 @@ Messaging platform for easy commerce and better support.
 App Module gradle file **(app/build.gradle)**
 ```
 dependencies {
-      compile('com.veslabs.jetlink:jetlinklibrary:1.1.12@aar') {
-        transitive = true
+      implementation('org.bitbucket.veslabs:jetlink-android-sdk-v2:2.0.9') {
+        transitive = false
     }
 }
 ```
@@ -30,8 +30,8 @@ Congratulations!!!
 
 ```
 dependencies {
-        compile('com.veslabs.jetlink:jetlinklibrary:1.1.12@aar') {
-        transitive = true
+        implementation('org.bitbucket.veslabs:jetlink-android-sdk-v2:2.0.9') {
+        transitive = false
     }
 
 }
@@ -43,36 +43,64 @@ And your minSdkVersion must at least be 16.
 
 ### 2. Initialize JetLink
 
-Add the following to your app's launcher activity’s onCreate() method. Please ensure JetLink.init() is invoked before you use any feature of JetLink SDK. 
+Add the following to your app's launcher activity’s onCreate() method or Application class' onCreate(). 
 Don't forget to replace the <YOUR-APP-ID> and <YOUR-APP-KEY> in the following code snippet with the actual app ID and app key.   
 
 ```
-	JetlinkConfig jetlinkConfig = new JetlinkConfig("<YOUR-APP-ID>", "<YOUR-APP-KEY>");
-
+	final JetlinkConfig jetlinkConfig = new JetlinkConfig("<YOUR-APP-ID>", "<YOUR-APP-KEY>");
+	JetlinkApp.getInstance(getApplicationContext()).init(jetlinkConfig);
 
 ```
 
 
 ### 3. Initialize User
 
-You can send basic user information at the beginning to give you more context on the user when your support agents are messaging back and forth with them.         
+You can send basic user information at the beginning to give you more context on the user when your support agents are messaging back and forth with them.
+**(Email, Phone,)** and **(SourceUserId)** fields are mandatory.       
+
+```	
+		final JetlinkUser user = new JetlinkUser();
+		user.setEmail("test@test.com");
+		user.setGenderString("male");
+		user.setName("Test User");
+		user.setSurname("Surname");
+		user.setPhone("021384217319");
+		user.setSourceUserId("08265");
+		JetlinkApp.getInstance(getApplicationContext()).createUser(user);
+		
 ```
-	JetLinkUser user = new JetLinkUser();
-	user.setEmail("salman.khan@veslabs.com");
-	user.setName("Salman");
-	user.setSurname("Khan");
-	JetLinkApp.getInstance(getApplicationContext()).setUser(user);
-	JetLinkApp.getInstance(getApplicationContext()).init(jetlinkConfig);
+
+### 4. Update User
+     
+
+```	
+		final JetlinkUser user = new JetlinkUser();
+		user.setEmail("test@test.com");
+		user.setGenderString("male");
+		user.setName("Test User");
+		user.setSurname("Surname");
+		user.setPhone("021384217319");
+		JetlinkApp.getInstance(getApplicationContext()).updateUser(user);
+		
+```
+
+### 5. Update User Avatar
+     
+
+```	
+	final File file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "avatar.jpg");
+	JetlinkApp.getInstance(getApplicationContext()).updateUserAvatar(file.getPath());
+		
 ```
 
 
-### 4. Call the Chat Activity
 
-Just call JetLinkChatActivity and it will open a ready-to-use chat screen;
+### 4. Call the Chat Screen
+
+Just call activateChatPanel and it will open a ready-to-use chat screen. Chat screen uses your colorPrimary, colorPrimaryDark, colorAccent
 
 ```
-Intent intent = new Intent(MainActivity.this, JetLinkChatActivity.class);
-startActivity(intent);
+JetlinkApp.activateChatPanel();
 ```
 
 ### 5. Offline Messages (Push Notifications)
