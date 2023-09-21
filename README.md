@@ -1,118 +1,39 @@
-## JetLink Android SDK
-[![Website](https://app.jetlink.io/Assets/img/jetlink-logo-medium.png)](https://jetlink.io)
+## Jetlink Android - How to use Jetlink messaging Android in iOS applicaitons
+[![Website](https://static.wixstatic.com/media/5750ed_9f0be19719cc4fdb89b40bdf78e22584~mv2.png/v1/fill/w_203,h_137,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Jetlink%20New%20Logo.png)](https://jetlink.io)
 ### [Official Website](https://jetlink.io/)
 
-Messaging platform for easy commerce and better support.
-
-##### Quick Steps
-
-App Module gradle file **(app/build.gradle)**
-```
-dependencies {
-      implementation('org.bitbucket.veslabs:jetlink-android-sdk-v2:2.0.9') {
-        transitive = false
-    }
-}
-```
-
-That's All! JetLink is ready to go! Now, you have a messaging module in your app.
-
-Congratulations!!!
-
-
-
+Meaningful experiences + high ROI delivered with the most sophisticated Conversational AI
 ----------------------------------------------------------------------------------------
-
 
 ## HOW TO USE JETLINK
 
-### 1. Add dependencies to our app module's Gradle file. (project/app/build.gradle)
+### 1. Place any suitable icon on you application.
+It can be used in Menu, Header Bar or anywhere that you want your users can reach chatbot interface.
+
+### 2. Open Jetlink Webview URL after clicking chatbot icon
+
+You can find Jetlink Webview URL on your Jetlink Dashboard. It should be in Settings -> Android
+
+Jetlink WebView URL can be as following
 
 ```
-dependencies {
-        implementation('org.bitbucket.veslabs:jetlink-android-sdk-v2:2.0.9') {
-        transitive = false
-    }
-
-}
+https://public.jetlink.io/Home/MobilSDK?appId=<YOUR-APP-ID>&appKey=<YOUR-APP-KEY>
+	&mobileSDKType=android&mobileDeviceName=<DEVICE-NAME>&mobileDeviceOS=<DEVICE-OS-VERSION>
 ```
 
+### 4. Initialize Jetlink UI with User's Login Information
 
-And your minSdkVersion must at least be 16.
-
-
-### 2. Initialize JetLink
-
-Add the following to your app's launcher activity’s onCreate() method or Application class' onCreate(). 
-Don't forget to replace the <YOUR-APP-ID> and <YOUR-APP-KEY> in the following code snippet with the actual app ID and app key.   
+You can also open Jetlink Webview URL with your user's login information such as name, surname, email, phone number, and userId
 
 ```
-	final JetlinkConfig jetlinkConfig = new JetlinkConfig("<YOUR-APP-ID>", "<YOUR-APP-KEY>");
-	JetlinkApp.getInstance(getApplicationContext()).init(jetlinkConfig);
-
+https://public.jetlink.io/Home/MobilSDK?appId=<YOUR-APP-ID>&appKey=<YOUR-APP-KEY>
+	&mobileSDKType=android&mobileDeviceName=<DEVICE-NAME>&mobileDeviceOS=<DEVICE-OS-VERSION>
+	&username=<USER-FIRST-NAME>&userSurname=<USER-SURNAME>
+	&userEmail=<USER-EMAIL>&userPhone=<USER-PHONE-NUMBER>
+	&userSourceUserId=<USER-UNIQUE-ID-IN-YOUR-SYSTEM>
 ```
 
+You can send any user sensitive information via Jetlink WebView URL.
+Name, surname, email, phone and your user unique ID... You can send all or some of these due to which information is stored on your system. Jetlink UI will open with these information and remember the user by these values another time they will chat again.  
 
-### 3. Initialize User
-
-You can send basic user information at the beginning to give you more context on the user when your support agents are messaging back and forth with them.
-**(Email, Phone,)** and **(SourceUserId)** fields are mandatory.       
-
-```	
-		final JetlinkUser user = new JetlinkUser();
-		user.setEmail("test@test.com");
-		user.setGenderString("male");
-		user.setName("Test User");
-		user.setSurname("Surname");
-		user.setPhone("021384217319");
-		user.setSourceUserId("08265");
-		JetlinkApp.getInstance(getApplicationContext()).createUser(user);
-		
-```
-
-### 4. Update User
-     
-
-```	
-		final JetlinkUser user = new JetlinkUser();
-		user.setEmail("test@test.com");
-		user.setGenderString("male");
-		user.setName("Test User");
-		user.setSurname("Surname");
-		user.setPhone("021384217319");
-		JetlinkApp.getInstance(getApplicationContext()).updateUser(user);
-		
-```
-
-### 5. Update User Avatar
-     
-
-```	
-	final File file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "avatar.jpg");
-	JetlinkApp.getInstance(getApplicationContext()).updateUserAvatar(file.getPath());
-		
-```
-
-
-
-### 4. Call the Chat Screen
-
-Just call activateChatPanel and it will open a ready-to-use chat screen. Chat screen uses your colorPrimary, colorPrimaryDark, colorAccent
-
-```
-JetlinkApp.activateChatPanel();
-```
-
-### 5. Offline Messages (Push Notifications)
-
-You need to integrate Firebase Cloud Messaging (FCM) into your app in order to get messages while your app is killed. 
-Because this mechanism uses push messages to trigger Jetlink and Jetlink works with Firebase Cloud Messaging System of Google.
-
-[For Firebase Cloud Messaging integration please click.](https://github.com/jetlinkio/jetlink-android-sdk/wiki/Notification-Message-Integration)
-
-<!--
-## VIDEO TUTORIAL
-Altough we have clearly explained everthing, a video tutorial may still be helpful.
-
-[![IMAGE ALT TEXT HERE](https://github.com/jetlinkio/jetlink-android-sdk/blob/master/app/src/main/res/mipmap-hdpi/jetlink_Youtube_Video2.png)](https://www.youtube.com/watch?v=LmoE6XGCl0c)
--->
+That's all.. You can start messaging on your on mobile applicaion.
