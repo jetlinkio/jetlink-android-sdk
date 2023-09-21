@@ -21,7 +21,7 @@ https://public.jetlink.io/Home/MobilSDK?appId=<YOUR-APP-ID>&appKey=<YOUR-APP-KEY
 	&mobileSDKType=android&mobileDeviceName=<DEVICE-NAME>&mobileDeviceOS=<DEVICE-OS-VERSION>
 ```
 
-### 4. Initialize Jetlink UI with User's Login Information
+### How to initialize Jetlink UI with User's Login Information
 
 You can also open Jetlink Webview URL with your user's login information such as name, surname, email, phone number, and userId
 
