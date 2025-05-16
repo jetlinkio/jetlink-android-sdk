@@ -1,5 +1,5 @@
 ## Jetlink Android - How to use Jetlink messaging in Android applications
-[![Website](https://static.wixstatic.com/media/5750ed_9f0be19719cc4fdb89b40bdf78e22584~mv2.png/v1/fill/w_203,h_137,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Jetlink%20New%20Logo.png)](https://jetlink.io)
+[![Website](https://static.wixstatic.com/media/264e99_853f1bdadee449d7b16865f9884c0b37~mv2.png/v1/fill/w_665,h_291,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Jetlink%20Logo%20(2).png)](https://jetlink.io)
 ### [Official Website](https://jetlink.io/)
 
 Meaningful experiences + high ROI delivered with the most sophisticated Conversational AI
